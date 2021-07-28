@@ -8,3 +8,6 @@ class Todo(models.Model):
     date = models.CharField(max_length=10)
     month = models.CharField(max_length=10)
     year = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.title
